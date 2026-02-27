@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/sushi.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sushi Hoshi | Sushi & fusion asiatique à volonté</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav">
+        <div class="header__logo">
+          <h4 data-aos="fade-down">Sushi Hoshi</h4>
+          <div class="header__logo-overlay"></div>
+        </div>
+
+        <ul class="header__menu" data-aos="fade-down">
+          <li>
+            <a href="#menu">Menu</a>
+          </li>
+          <li>
+            <a href="#food">Plats</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#about-us">À propos</a>
+          </li>
+          <li>
+            <img src="assets/search.svg" alt="recherche" />
+          </li>
+        </ul>
+
+        <ul class="header__menu-mobile" data-aos="fade-down">
+          <li>
+            <img src="assets/menu.svg" alt="menu" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-image">
+        <img 
+          src="assets/sushi-1.png"
+          alt="sushi"
+          data-aos="fade-up"
+        />
+        <h2 data-aos="fade-up">
+          日 <br />
+          本 <br />
+          食
+        </h2>
+
+        <div class="hero-image__overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-content-info" data-aos="fade-left">
+          <h1>Sushi & fusion asiatique à volonté</h1>
+          <p>Apportez votre vin. Plongez dans le monde des sushis, mets chinois et japonais avec notre concept "À la carte à volonté".</p>
+
+          <div class="hero-content__buttons">
+            <button class="hero-content__order-button">Commander</button>
+            <button class="hero-content__play-button">
+              <img src="assets/play-circle.svg" alt="play" />
+              Voir le menu
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-content__testimonial" data-aos="fade-up">
+          <div class="hero-content__customer flex-center">
+            <h4>24<span>k+</span></h4>
+            <p>Clients satisfaits</p>
+          </div>
+
+          <div class="hero-content__review">
+            <img src="assets/user.png" alt="utilisateur" />
+            <p>"L'endroit idéal pour vivre une expérience de dégustation authentique."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+      <div class="about-us__image">
+        <div class="about-us__image-sushi3">
+          <img src="assets/sushi-3.png" alt="sushi" data-aos="fade-right" />
+        </div>
+
+        <button class="about-us__button">
+          En savoir plus
+
+          <img src="assets/arrow-up-right.svg" alt="en savoir plus" />
+        </button>
+
+        <div class="about-us__image-sushi2">
+          <img src="assets/sushi-2.png" alt="sushi"  data-aos="fade-right" />
+        </div>
+      </div>
+
+      <div class="about-us__content"  data-aos="fade-left">
+        <p class="sushi__subtitle">À propos de nous / 私たちについて</p>
+        <h3 class="sushi__title">L'endroit idéal pour vivre une expérience de dégustation</h3>
+        <p class="sushi__description">Sushi Hoshi est l'endroit idéal pour vivre une expérience de dégustation. Plongez dans le monde des sushis, mets chinois et japonais avec notre concept "À la carte à volonté". Avec un vaste menu, on y trouve un délice pour tous les goûts, en plus, on est un restaurant Apportez votre vin, la combinaison parfaite.
+        </p>
+      </div>
+    </section>
+
+    <section class="popular-foods" id="menu">
+      <h2 class="popular-foods__title" data-aos="flip-up">Nos menus / メニュー</h2>
+
+      <div class="popular-foods__catalogue" data-aos="fade-up">
+        <article class="popular-foods__card active-card" onclick="openMenuModal('midi-semaine')">
+          <img class="popular-foods__card-image" src="assets/sushi-12.png" alt="menu midi" />
+          <h4 class="popular-foods__card-title">Menu du midi</h4>
+          <p class="popular-foods__card-subtitle">Lundi au vendredi</p>
+
+          <div class="popular-foods__card-details">
+            <p class="popular-foods__card-price">23,99$</p>
+            <div class="popular-foods__card-extra">
+              <p>Enfant (3-5 ans): 5,99$</p>
+              <p>Enfant (6-10 ans): 11,99$</p>
+              <p>Âge d'or (65+): 21,99$</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="popular-foods__card active-card" onclick="openMenuModal('midi-fds')">
+          <img class="popular-foods__card-image" src="assets/sushi-11.png" alt="menu midi weekend" />
+          <h4 class="popular-foods__card-title">Menu du midi</h4>
+          <p class="popular-foods__card-subtitle">Samedi & dimanche</p>
+          
+          <div class="popular-foods__card-details">
+            <p class="popular-foods__card-price">25,99$</p>
+            <div class="popular-foods__card-extra">
+              <p>Enfant (3-5 ans): 6,99$</p>
+              <p>Enfant (6-10 ans): 12,99$</p>
+              <p>Âge d'or (65+): 22,99$</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="popular-foods__card active-card" onclick="openMenuModal('soir')">
+          <img class="popular-foods__card-image" src="assets/sushi-10.png" alt="menu soir" />
+          <h4 class="popular-foods__card-title">Menu du soir</h4>
+          <p class="popular-foods__card-subtitle">Lundi au jeudi</p>
+
+          <div class="popular-foods__card-details">
+            <p class="popular-foods__card-price">40,99$</p>
+            <div class="popular-foods__card-extra">
+              <p>Enfant (3-5 ans): 9,99$</p>
+              <p>Enfant (6-10 ans): 19,99$</p>
+              <p>Âge d'or (65+): 37,99$</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="popular-foods__card active-card" onclick="openMenuModal('fds')">
+          <img class="popular-foods__card-image" src="assets/sushi-9.png" alt="menu fin de semaine" />
+          <h4 class="popular-foods__card-title">Menu FDS</h4>
+          <p class="popular-foods__card-subtitle">Vendredi, samedi & dimanche</p>
+
+          <div class="popular-foods__card-details">
+            <p class="popular-foods__card-price">43,99$</p>
+            <div class="popular-foods__card-extra">
+              <p>Enfant (3-5 ans): 10,99$</p>
+              <p>Enfant (6-10 ans): 21,99$</p>
+              <p>Âge d'or (65+): 39,99$</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <button class="popular-foods__button">
+        Voir le menu complet
+        <img src="assets/arrow-right.svg"  alt="flèche droite" />
+      </button>
+    </section>
+
+    <!-- Modal pour les menus -->
+    <div id="menuModal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeMenuModal()">&times;</span>
+        <div id="modalBody" class="modal-body"></div>
+      </div>
+    </div>
+
+    <section class="trending" id="food">
+      <section class="trending-sushi">
+        <div class="trending__content" data-aos="fade-right">
+          <p class="sushi__subtitle">What’s Trending / トレンド</p>
+  
+          <h3 class="sushi__title">Sushis japonais
+          </h3>
+          <p class="sushi__description">Découvrez le goût des sushis les plus délicieux préparés avec soin.
+          </p>
+  
+          <ul class="trending__list flex-between">
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Maki Sushi</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Oshizushi</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Uramaki Sushi</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Nigiri Sushi</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Temaki Sushi</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Inari Sushi</p>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="trending__image flex-center">
+          <img src="assets/sushi-5.png" alt="sushi-5" data-aos="fade-left" />
+  
+          <div class="trending__arrow trending__arrow-left">
+            <img src="assets/arrow-vertical.svg" alt="flèche verticale" />
+          </div>
+  
+          <div class="trending__arrow trending__arrow-bottom">
+            <img src="assets/arrow-horizontal.svg" alt="flèche horizontale" />
+          </div>
+        </div>
+
+      </section>
+
+      <div class="trending__discover" data-aos="zoom-in">
+        <p>Découvrir</p>
+      </div>
+
+      <section class="trending-drinks">
+        <div class="trending__image flex-center">
+          <img src="assets/sushi-4.png" alt="sushi-4" data-aos="fade-right" />
+  
+          <div class="trending__arrow trending__arrow-top">
+            <img src="assets/arrow-horizontal.svg" alt="flèche horizontale" />
+          </div>
+  
+          <div class="trending__arrow trending__arrow-right">
+            <img src="assets/arrow-vertical.svg" alt="flèche verticale" />
+          </div>
+        </div>
+
+        <div class="trending__content" data-aos="fade-left">
+          <p class="sushi__subtitle">What’s Trending / トレンド</p>
+  
+          <h3 class="sushi__title">Mets chinois et japonais
+          </h3>
+          <p class="sushi__description">Découvrez notre vaste sélection de plats asiatiques authentiques.
+          </p>
+  
+          <ul class="trending__list flex-between">
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Ramen</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Udon</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Tempura</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Gyoza</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Pad Thaï</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Général Tao</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <section class="subscription flex-center" id="services">
+      <h2 data-aos="flip-down">
+        Réservez votre table <br />
+        dès maintenant
+      </h2>
+      <p data-aos="fade-up">Pour vous offrir la meilleure expérience possible, les réservations sont toujours préférables</p>
+
+      <div class="subscription__form" data-aos="fade-up">
+        <input type="text" placeholder="Entrez votre adresse courriel"/>
+        <button>Réserver</button>
+      </div>
+    </section>
+
+    <footer class="footer flex-between">
+      <h3 class="footer__logo">
+        <span>Sushi</span> Hoshi
+      </h3>
+
+      <ul class="footer__nav">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#food">Plats</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about-us">À propos</a></li>
+      </ul>
+
+      <ul class="footer__social">
+        <li class="flex-center">
+          <img src="assets/facebook.svg" alt="facebook" />
+        </li>
+        <li class="flex-center">
+          <img src="assets/instagram.svg" alt="instagram" />
+        </li>
+        <li class="flex-center">
+          <img src="assets/twitter.svg" alt="twitter" />
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>
